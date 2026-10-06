@@ -1,0 +1,38 @@
+{
+  "name": "nationalcare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "npm run test:db",
+    "test:db": "node tests/database.mjs",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.117.2",
+    "@zxing/browser": "0.2.1",
+    "jspdf": "4.2.1",
+    "lucide-react": "1.50.0",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8",
+    "@playwright/test": "1.56.1",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "https-proxy-agent": "9.1.0",
+    "prettier": "3.9.9",
+    "supabase": "2.119.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "ws": "8.22.0"
+  }
+}

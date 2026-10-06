@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d7a58" />
+    <meta name="description" content="NationalCare is a synthetic-data concept prototype for connected health services in Pakistan." />
+    <title>NationalCare — Health services, connected</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind = { theme: { extend: {
+        colors: { care: { 50: '#f4faf7', 100: '#e8f8f2', 500: '#16a97a', 700: '#0d7a58', 900: '#0f1f1a' }, healthTeal: '#0891b2' },
+        borderRadius: { care: '14px' },
+        keyframes: { 'care-in': { '0%': { opacity: '0', transform: 'translateY(8px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } },
+        animation: { 'care-in': 'care-in .3s ease-out both' }
+      } } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <div id="app" aria-live="polite"></div>
+    <div id="toast-root" class="toast-root" aria-live="assertive" aria-atomic="true"></div>
+    <noscript>NationalCare demo requires JavaScript.</noscript>
+  </body>
+</html>
